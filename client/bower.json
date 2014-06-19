@@ -1,0 +1,9 @@
+{
+	"name": "student-fly",
+	"version": "1.0.0",
+	"dependencies": {
+		"angular":"*",
+		"jquery":"latest",
+		"bootstrap":"3.1.1"
+	}
+}

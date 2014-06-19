@@ -1,0 +1,46 @@
+doctype 5
+
+html(ng-app='student-fly')
+	head
+		meta(charset='UTF-8')
+		title
+			| You Template
+		link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+
+	body(style='padding:60px 30px;')
+		div.row.clearfix
+			div.col-md-12.column
+				nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
+					div.navbar-header
+						button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.navbar-brand(href='/#/', style='color:#ea1943')
+							b You Template
+					div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+						ul.nav.navbar-nav
+							li.active
+								a(ng-href='#/carrer') Tuyển dụng
+							li
+								a(ng-href='#/blog') Bài viết
+							li
+								a(ng-href='#/research') Công trình nghiên cứu
+
+		div(ng-view)
+
+		.row(style='margin-top:50px; margin-bottom:50px')
+			.col-md-10.col-md-offset-1
+				label.label.label-youth YouthStd 2014
+
+		script(src='bower_components/jquery/dist/jquery.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-animate.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-resource.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-route.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular-sanitize.min.js')
+
+		script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+		script(src='scripts.js')
+		script(src='templates.js')
